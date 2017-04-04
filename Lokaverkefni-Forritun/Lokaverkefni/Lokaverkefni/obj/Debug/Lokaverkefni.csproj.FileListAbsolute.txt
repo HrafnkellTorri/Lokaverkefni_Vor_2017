@@ -1,0 +1,10 @@
+H:\FOR\Lokaverkefni\Lokaverkefni\bin\Debug\Lokaverkefni.exe.config
+H:\FOR\Lokaverkefni\Lokaverkefni\bin\Debug\Lokaverkefni.exe
+H:\FOR\Lokaverkefni\Lokaverkefni\bin\Debug\Lokaverkefni.pdb
+H:\FOR\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.csprojResolveAssemblyReference.cache
+H:\FOR\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fLokaverkefni.resources
+H:\FOR\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.Properties.Resources.resources
+H:\FOR\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.csproj.GenerateResource.Cache
+H:\FOR\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.exe
+H:\FOR\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.pdb
+H:\FOR\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.Adalform.resources
