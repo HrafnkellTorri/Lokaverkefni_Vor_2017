@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lokaverkefni</RootNamespace>
     <AssemblyName>Lokaverkefni</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -98,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\brain_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\typing.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

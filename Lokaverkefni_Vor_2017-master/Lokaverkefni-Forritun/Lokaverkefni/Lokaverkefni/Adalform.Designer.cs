@@ -29,25 +29,49 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnTypingGame = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 110);
+            this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Aðalform - velkomin";
+            this.label1.Text = "Choose game:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(236, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "You are playing as:";
+            // 
+            // btnTypingGame
+            // 
+            this.btnTypingGame.BackColor = System.Drawing.Color.White;
+            this.btnTypingGame.BackgroundImage = global::Lokaverkefni.Properties.Resources.typing;
+            this.btnTypingGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTypingGame.Location = new System.Drawing.Point(12, 49);
+            this.btnTypingGame.Name = "btnTypingGame";
+            this.btnTypingGame.Size = new System.Drawing.Size(209, 93);
+            this.btnTypingGame.TabIndex = 1;
+            this.btnTypingGame.UseVisualStyleBackColor = false;
             // 
             // Adalform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(441, 218);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnTypingGame);
             this.Controls.Add(this.label1);
             this.Name = "Adalform";
-            this.Text = "Adalform";
+            this.Text = "Games";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,5 +80,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnTypingGame;
+        private System.Windows.Forms.Label label2;
+
     }
 }

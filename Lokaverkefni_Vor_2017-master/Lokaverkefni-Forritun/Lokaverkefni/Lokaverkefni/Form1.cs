@@ -77,6 +77,13 @@ namespace Lokaverkefni
             }
         }
 
+        private void btnGestur_Click(object sender, EventArgs e)
+        {
+            Adalform adalform = new Adalform();
+            adalform.Show();
+            Hide();
+        }
+
         
     }
 }
