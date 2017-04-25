@@ -51,16 +51,14 @@ namespace Lokaverkefni
             base.OnFormClosing(e);
 
             Application.Exit();
-<<<<<<< HEAD
+
         }
 
        
-=======
+
         }//End á OnFormClosing()
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
+
         
->>>>>>> origin/master
-    }
+
 }
+

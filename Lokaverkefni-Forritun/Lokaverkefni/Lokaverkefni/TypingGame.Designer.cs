@@ -28,37 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
+
             this.SuspendLayout();
             // 
             // TypingGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-<<<<<<< HEAD
+
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Name = "TypingGame";
             this.Text = "TypingGame";
             this.ResumeLayout(false);
 
-=======
+
             this.components = new System.ComponentModel.Container();
-=======
->>>>>>> origin/master
+
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Name = "TypingGame";
             this.Text = "TypingGame";
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
+
             this.Load += new System.EventHandler(this.TypingGame_Load);
             this.ResumeLayout(false);
 
->>>>>>> origin/master
+
         }
 
         #endregion

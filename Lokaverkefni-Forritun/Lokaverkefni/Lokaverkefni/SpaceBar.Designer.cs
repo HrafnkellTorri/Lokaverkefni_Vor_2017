@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             this.components = new System.ComponentModel.Container();
             this.lblTimer = new System.Windows.Forms.Label();
             this.lblMain_Timer = new System.Windows.Forms.Label();
@@ -37,9 +36,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pic1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
-=======
             this.lblTimer = new System.Windows.Forms.Label();
->>>>>>> origin/master
             this.SuspendLayout();
             // 
             // lblTimer
@@ -50,7 +47,6 @@
             this.lblTimer.Size = new System.Drawing.Size(0, 13);
             this.lblTimer.TabIndex = 0;
             // 
-<<<<<<< HEAD
             // lblMain_Timer
             // 
             this.lblMain_Timer.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -93,13 +89,13 @@
             this.pic1.TabIndex = 4;
             this.pic1.TabStop = false;
             // 
-=======
->>>>>>> origin/master
+
+
             // SpaceBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(409, 448);
             this.Controls.Add(this.pic1);
             this.Controls.Add(this.lblclicks);
@@ -111,12 +107,10 @@
             this.Load += new System.EventHandler(this.SpaceBar_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SpaceBar_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
-=======
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.lblTimer);
             this.Name = "SpaceBar";
             this.Text = "SpaceBar";
->>>>>>> origin/master
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,13 +119,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblTimer;
-<<<<<<< HEAD
         private System.Windows.Forms.Label lblMain_Timer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblclicks;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pic1;
-=======
->>>>>>> origin/master
     }
 }
