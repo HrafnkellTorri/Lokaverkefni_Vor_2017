@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Lokaverkefni
 {
-    public partial class Adalform : Form
+    public partial class TypingGame : Form
     {
-        public Adalform()
+        public TypingGame()
         {
             InitializeComponent();
-        }
-
-        private void Adalform_Load(object sender, EventArgs e)
-        {
-
         }
 
         //Þetta er til þess að loka forritinu alveg þegar ýtt er á takkann X
@@ -29,19 +24,5 @@ namespace Lokaverkefni
 
             Application.Exit();
         }//End á OnFormClosing()
-
-        private void btnTypingGame_Click(object sender, EventArgs e)
-        {
-            TypingGame typinggame = new TypingGame();
-            typinggame.Show();
-            this.Hide();
-        }
-
-        private void btnSpaceBar_Click(object sender, EventArgs e)
-        {
-            SpaceBar spacebar = new SpaceBar();
-            spacebar.Show();
-            this.Hide();
-        }
     }
 }

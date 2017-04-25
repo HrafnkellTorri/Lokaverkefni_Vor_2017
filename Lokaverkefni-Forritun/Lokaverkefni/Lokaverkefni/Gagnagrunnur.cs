@@ -27,10 +27,10 @@ namespace Lokaverkefni
 
         public void TengingVidGagnagrunn()
         {
-            server = "178.62.77.182";
+            server = "188.166.169.15";
             database = "Lokaverkefni";
-            uid = "Erla";
-            password = "12345";
+            uid = "root";
+            password = "Erla321";
             tengistrengur = "server=" + server + ";userid=" + uid + ";password=" + password + ";database=" + database;
             sqltenging = new MySqlConnection(tengistrengur);
         }
