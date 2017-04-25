@@ -17,6 +17,7 @@ namespace Lokaverkefni
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         int timeleft = 10;
         int count = 0;
         
@@ -58,17 +59,23 @@ namespace Lokaverkefni
             }
         }
 
+=======
+>>>>>>> origin/master
         //Þetta er til þess að loka forritinu alveg þegar ýtt er á takkann X
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
 
             Application.Exit();
+<<<<<<< HEAD
         }
 
         private void lblMain_Timer_Click(object sender, EventArgs e)
         {
 
         }
+=======
+        }//End á OnFormClosing()
+>>>>>>> origin/master
     }
 }

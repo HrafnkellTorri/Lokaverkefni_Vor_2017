@@ -23,8 +23,12 @@ namespace Lokaverkefni
             base.OnFormClosing(e);
 
             Application.Exit();
+<<<<<<< HEAD
         }
 
        
+=======
+        }//End á OnFormClosing()
+>>>>>>> origin/master
     }
 }

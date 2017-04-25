@@ -38,6 +38,7 @@ H:\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Deb
 H:\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fLokaverkefni.resources
 H:\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.Properties.Resources.resources
 H:\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\1610972769\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\bin\Debug\Lokaverkefni.exe.config
 C:\Users\1610972769\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.exe
 C:\Users\1610972769\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.pdb
@@ -50,3 +51,5 @@ C:\Users\1610972769\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun
 C:\Users\1610972769\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.csproj.GenerateResource.Cache
 C:\Users\1610972769\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.SpaceBar.resources
 C:\Users\1610972769\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.TypingGame.resources
+=======
+>>>>>>> origin/master
