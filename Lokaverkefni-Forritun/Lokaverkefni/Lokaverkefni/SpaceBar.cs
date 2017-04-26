@@ -73,7 +73,7 @@ namespace Lokaverkefni
 
         }
 
-        }//End á OnFormClosing()
+        }
 
     }
 

@@ -36,7 +36,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pic1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
-            this.lblTimer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTimer
@@ -60,16 +59,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(356, 9);
+            this.label1.Location = new System.Drawing.Point(353, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = ": Clicks";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblclicks
             // 
             this.lblclicks.AutoSize = true;
-            this.lblclicks.Location = new System.Drawing.Point(350, 9);
+            this.lblclicks.Location = new System.Drawing.Point(334, 9);
             this.lblclicks.Name = "lblclicks";
             this.lblclicks.Size = new System.Drawing.Size(0, 13);
             this.lblclicks.TabIndex = 3;
@@ -89,17 +89,14 @@
             this.pic1.TabIndex = 4;
             this.pic1.TabStop = false;
             // 
-
-
             // SpaceBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
-            this.ClientSize = new System.Drawing.Size(409, 448);
+            this.ClientSize = new System.Drawing.Size(406, 425);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pic1);
             this.Controls.Add(this.lblclicks);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMain_Timer);
             this.Controls.Add(this.lblTimer);
             this.Name = "SpaceBar";
@@ -107,10 +104,6 @@
             this.Load += new System.EventHandler(this.SpaceBar_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SpaceBar_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.lblTimer);
-            this.Name = "SpaceBar";
-            this.Text = "SpaceBar";
             this.ResumeLayout(false);
             this.PerformLayout();
 
