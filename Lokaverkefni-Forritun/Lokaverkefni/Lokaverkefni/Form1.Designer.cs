@@ -32,18 +32,13 @@
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.gbLogIn = new System.Windows.Forms.GroupBox();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.btnSignUp = new System.Windows.Forms.Button();
+            this.btnGestur = new System.Windows.Forms.Button();
             this.gbLogIn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbUsername
@@ -84,15 +79,14 @@
             this.gbLogIn.TabStop = false;
             this.gbLogIn.Text = "Log In";
             // 
-            // pbLogo
+            // label2
             // 
-            this.pbLogo.Image = global::Lokaverkefni.Properties.Resources.brain_logo;
-            this.pbLogo.Location = new System.Drawing.Point(12, 12);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(406, 138);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogo.TabIndex = 6;
-            this.pbLogo.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Password:";
             // 
             // label1
             // 
@@ -103,78 +97,44 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Username:";
             // 
-            // label2
+            // pbLogo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Password:";
+            this.pbLogo.Image = global::Lokaverkefni.Properties.Resources.brain_logo;
+            this.pbLogo.Location = new System.Drawing.Point(12, 12);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(381, 138);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogo.TabIndex = 6;
+            this.pbLogo.TabStop = false;
             // 
-            // groupBox1
+            // btnSignUp
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Location = new System.Drawing.Point(218, 156);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 136);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sign Up";
+            this.btnSignUp.Location = new System.Drawing.Point(237, 171);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(156, 47);
+            this.btnSignUp.TabIndex = 3;
+            this.btnSignUp.Text = "Sign Up";
+            this.btnSignUp.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // btnGestur
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Password:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 32);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Username:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(81, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(106, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Log In";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(81, 29);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 0;
+            this.btnGestur.Location = new System.Drawing.Point(237, 224);
+            this.btnGestur.Name = "btnGestur";
+            this.btnGestur.Size = new System.Drawing.Size(156, 47);
+            this.btnGestur.TabIndex = 8;
+            this.btnGestur.Text = "Gestur";
+            this.btnGestur.UseVisualStyleBackColor = true;
+            this.btnGestur.Click += new System.EventHandler(this.btnGestur_Click);
             // 
             // fLokaverkefni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(430, 304);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(405, 302);
+            this.Controls.Add(this.btnGestur);
             this.Controls.Add(this.pbLogo);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.gbLogIn);
             this.Name = "fLokaverkefni";
             this.Text = "Lokaverkefni";
@@ -182,8 +142,6 @@
             this.gbLogIn.ResumeLayout(false);
             this.gbLogIn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -197,12 +155,8 @@
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnSignUp;
+        private System.Windows.Forms.Button btnGestur;
     }
 }
 

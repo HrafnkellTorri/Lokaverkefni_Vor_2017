@@ -62,7 +62,7 @@ namespace Lokaverkefni
                     Adalform adalform = new Adalform();
                     adalform.Show();
                     //Login formið hverfur
-                    this.Hide();
+                    Hide();
                 }
                 else
                 {
@@ -75,6 +75,13 @@ namespace Lokaverkefni
                 //Ef villa kemur upp birtist messagebox sem segir hvað er að
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void btnGestur_Click(object sender, EventArgs e)
+        {
+            Adalform adalform = new Adalform();
+            adalform.Show();
+            Hide();
         }
 
         
