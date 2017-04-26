@@ -73,7 +73,23 @@ namespace Lokaverkefni
 
         }
 
+        private void pic1_Click(object sender, EventArgs e)
+        {
+
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Adalform menu = new Adalform();
+            menu.Show();
+        }
+
+        private void btnInstructions_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+    }
 
     }
 

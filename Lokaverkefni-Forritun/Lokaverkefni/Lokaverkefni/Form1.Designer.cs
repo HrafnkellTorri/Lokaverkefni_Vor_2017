@@ -122,7 +122,7 @@
             this.btnGestur.Name = "btnGestur";
             this.btnGestur.Size = new System.Drawing.Size(156, 47);
             this.btnGestur.TabIndex = 8;
-            this.btnGestur.Text = "Gestur";
+            this.btnGestur.Text = "Guest";
             this.btnGestur.UseVisualStyleBackColor = true;
             this.btnGestur.Click += new System.EventHandler(this.btnGestur_Click);
             // 

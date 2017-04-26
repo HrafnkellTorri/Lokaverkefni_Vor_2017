@@ -35,6 +35,9 @@
             this.lblclicks = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pic1 = new System.Windows.Forms.PictureBox();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnInstructions = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,20 +51,22 @@
             // 
             // lblMain_Timer
             // 
-            this.lblMain_Timer.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMain_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMain_Timer.Location = new System.Drawing.Point(12, 9);
             this.lblMain_Timer.Name = "lblMain_Timer";
-            this.lblMain_Timer.Size = new System.Drawing.Size(124, 30);
+            this.lblMain_Timer.Size = new System.Drawing.Size(153, 30);
             this.lblMain_Timer.TabIndex = 1;
             this.lblMain_Timer.Text = "Time Left: 10";
+            this.lblMain_Timer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblMain_Timer.Click += new System.EventHandler(this.lblMain_Timer_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(353, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(328, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(66, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = ": Clicks";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -69,9 +74,10 @@
             // lblclicks
             // 
             this.lblclicks.AutoSize = true;
-            this.lblclicks.Location = new System.Drawing.Point(334, 9);
+            this.lblclicks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblclicks.Location = new System.Drawing.Point(292, 9);
             this.lblclicks.Name = "lblclicks";
-            this.lblclicks.Size = new System.Drawing.Size(0, 13);
+            this.lblclicks.Size = new System.Drawing.Size(0, 20);
             this.lblclicks.TabIndex = 3;
             // 
             // timer1
@@ -82,18 +88,54 @@
             // 
             this.pic1.Image = global::Lokaverkefni.Properties.Resources.hand;
             this.pic1.InitialImage = global::Lokaverkefni.Properties.Resources.hand;
-            this.pic1.Location = new System.Drawing.Point(32, 62);
+            this.pic1.Location = new System.Drawing.Point(37, 87);
             this.pic1.Name = "pic1";
             this.pic1.Size = new System.Drawing.Size(334, 339);
             this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic1.TabIndex = 4;
             this.pic1.TabStop = false;
+            this.pic1.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // btnStart
+            // 
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(126, 42);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(166, 39);
+            this.btnStart.TabIndex = 5;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(37, 432);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(152, 37);
+            this.btnMenu.TabIndex = 6;
+            this.btnMenu.Text = "Back to menu";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnInstructions
+            // 
+            this.btnInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstructions.Location = new System.Drawing.Point(219, 432);
+            this.btnInstructions.Name = "btnInstructions";
+            this.btnInstructions.Size = new System.Drawing.Size(152, 37);
+            this.btnInstructions.TabIndex = 7;
+            this.btnInstructions.Text = "Instructions";
+            this.btnInstructions.UseVisualStyleBackColor = true;
+            this.btnInstructions.Click += new System.EventHandler(this.btnInstructions_Click);
             // 
             // SpaceBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 425);
+            this.ClientSize = new System.Drawing.Size(406, 481);
+            this.Controls.Add(this.btnInstructions);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pic1);
             this.Controls.Add(this.lblclicks);
@@ -117,5 +159,8 @@
         private System.Windows.Forms.Label lblclicks;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pic1;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Button btnInstructions;
     }
 }

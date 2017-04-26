@@ -17,11 +17,12 @@ namespace Lokaverkefni
             InitializeComponent();
         }
 
+        const int wordCount = 210;
         Random random = new Random();
 
-        int timeleft = 30, number = 0, word = 0;
+        int timeleft = 30, number = 0, points = 0, comboCounter = 0;
 
-        string[] basicWords = new string[210] { "apple", "above", "again", "age", "agree", "after", "air", "alone", "army", "attack", "away", 
+        string[] basicWords = new string[wordCount] { "apple", "above", "again", "age", "agree", "after", "air", "alone", "army", "attack", "away", 
                 "baby", "back", "behind", "black", "better", "beer", "bridge", "born", "begin", 
                 "cake", "call", "candle", "card", "class", "cold", "clean", "colour", "corner", 
                 "dance", "dark", "day", "dead", "dirty", "duck", "draw", "dog", "drink", 
@@ -36,7 +37,7 @@ namespace Lokaverkefni
                 "male", "mark", "matter", "meal", "mother", "move", "music", "monkey", "million", 
                 "name", "number", "next", "night", "noise", "north", "nothing", "nation", "needle", 
                 "object", "ocean", "outside", "over", "order", "open", "orange", "only", "opposite", 
-                "page", "paint", "parent", "parnter", "party", "plane", "popular", "promise", "please", 
+                "page", "paint", "parent", "partner", "party", "plane", "popular", "promise", "please", 
                 "queen", "question", "quick", "quiet", "quite", 
                 "radio", "rainy", "read", "record", "report", "rubber", "rush", "remind", "repair", "rule", 
                 "safe", "salt", "school", "search", "second", "shout", "sleep", "sound", "station", 
@@ -48,7 +49,7 @@ namespace Lokaverkefni
 
         private void TypingGame_Load(object sender, EventArgs e)
         {
-            
+            tbWord.Enabled = false;
         }
 
         //Þetta er til þess að loka forritinu alveg þegar ýtt er á takkann X
@@ -57,16 +58,39 @@ namespace Lokaverkefni
             base.OnFormClosing(e);
 
             Application.Exit();
+        }
 
+        private void btnInstructions_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Adalform menu = new Adalform();
+            menu.Show();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            lblTimer.Text = "Time left: 30";
+            timeleft = 30;
             timer1.Interval = 1000;
             timer1.Start();
-            tbWord.Focus();
 
-            number = random.Next(0, 211);
+            tbWord.Focus();
+            tbWord.Enabled = true;
+            comboCounter = 0;
+            lblCombo.Text = "";
+
+            points = 0;
+            lblPoints.Text = "0 points";
+
+            btnMenu.Hide();
+            btnInstructions.Hide();
+
+            number = random.Next(0, wordCount);
             lblWord.Text = basicWords[number];
 
             btnStart.Visible = false;
@@ -95,24 +119,60 @@ namespace Lokaverkefni
 
                 if (lblWord.Text == word)
                 {
-                    number = random.Next(0, 211);
+                    number = random.Next(0, wordCount);
+
                     lblWord.Text = basicWords[number];
                     lblRorW.ForeColor = System.Drawing.Color.Green;
                     lblRorW.Text = "Right!";
+                    points += 10;
+                    lblPoints.Text = points + " points";
+                    comboCounter++;
                 }
                 else
                 {
                     lblRorW.ForeColor = System.Drawing.Color.Red;
                     lblRorW.Text = "Wrong!";
+                    points += -5;
+                    lblPoints.Text = points + " points";
+                    comboCounter = 0;
+                    lblCombo.Text = "Combo Lost";
                 }
             }
 
-            if (timeleft == 0)
+            if (comboCounter < 5)
             {
-                tbWord.Hide();
-                tbWord.Enabled = false;
+                lblCombo.ForeColor = System.Drawing.Color.DarkSalmon;
+                lblCombo.Text = "1x Combo";
             }
-            
+            else if (comboCounter >= 5 && comboCounter < 10)
+            {
+                points += 10;
+                lblCombo.ForeColor = System.Drawing.Color.DarkTurquoise;
+                lblCombo.Text = "2x Combo!";
+            }
+            else if (comboCounter >= 10 && comboCounter < 15)
+            {
+                points += 20;
+                lblCombo.ForeColor = System.Drawing.Color.DodgerBlue;
+                lblCombo.Text = "3x Combo!";
+            }
+            else if (comboCounter >= 15)
+            {
+                points += 40;
+                lblCombo.ForeColor = System.Drawing.Color.DarkMagenta;
+                lblCombo.Text = "5x Combo!";
+            }
+
+            if (timeleft <= 0)
+            {
+                tbWord.Enabled = false;
+                btnStart.Visible = true;
+                btnMenu.Show();
+                btnInstructions.Show();
+                tbWord.Clear();
+            }
+
+
         }
 
         }
