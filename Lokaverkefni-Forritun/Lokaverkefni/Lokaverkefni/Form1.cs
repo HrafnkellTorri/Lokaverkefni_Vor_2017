@@ -59,7 +59,7 @@ namespace Lokaverkefni
                 if (passw == password)
                 {
                     //Ef lykilorðið er rétt opnast annað form
-                    Adalform adalform = new Adalform();
+                    Adalform adalform = new Adalform(username);
                     adalform.Show();
                     //Login formið hverfur
                     Hide();
@@ -79,7 +79,7 @@ namespace Lokaverkefni
 
         private void btnGestur_Click(object sender, EventArgs e)
         {
-            Adalform adalform = new Adalform();
+            Adalform adalform = new Adalform("Guest");
             adalform.Show();
             Hide();
         }

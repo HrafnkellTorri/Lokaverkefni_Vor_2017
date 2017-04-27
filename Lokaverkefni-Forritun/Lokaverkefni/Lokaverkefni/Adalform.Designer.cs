@@ -47,11 +47,12 @@
             // lblPlaying
             // 
             this.lblPlaying.AutoSize = true;
-            this.lblPlaying.Location = new System.Drawing.Point(430, 24);
+            this.lblPlaying.Location = new System.Drawing.Point(240, 24);
             this.lblPlaying.Name = "lblPlaying";
             this.lblPlaying.Size = new System.Drawing.Size(97, 13);
             this.lblPlaying.TabIndex = 4;
             this.lblPlaying.Text = "You are playing as:";
+            this.lblPlaying.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnTypingGame
             // 

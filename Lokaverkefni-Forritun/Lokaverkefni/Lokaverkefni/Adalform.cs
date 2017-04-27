@@ -12,14 +12,16 @@ namespace Lokaverkefni
 {
     public partial class Adalform : Form
     {
-        public Adalform()
+        string username = "";
+        public Adalform(string user)
         {
             InitializeComponent();
+            username = user;
         }
 
         private void Adalform_Load(object sender, EventArgs e)
         {
-
+            lblPlaying.Text += " " + username;
         }
 
         //Þetta er til þess að loka forritinu alveg þegar ýtt er á takkann X

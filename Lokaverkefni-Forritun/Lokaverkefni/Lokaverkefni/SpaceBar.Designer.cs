@@ -129,7 +129,7 @@
             this.Controls.Add(this.lblTimer);
             this.Name = "fSpaceBar";
             this.Text = "SpaceBar";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fSpaceBar_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.fSpaceBar_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -68,7 +68,7 @@ namespace Lokaverkefni
         private void btnMenu_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Adalform menu = new Adalform();
+            Adalform menu = new Adalform("");
             menu.Show();
         }
 

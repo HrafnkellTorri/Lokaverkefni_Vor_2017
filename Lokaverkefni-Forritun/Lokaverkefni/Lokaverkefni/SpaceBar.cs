@@ -44,7 +44,7 @@ namespace Lokaverkefni
         private void btnMenu_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Adalform menu = new Adalform();
+            Adalform menu = new Adalform("");
             menu.Show();
         }
 
@@ -70,7 +70,7 @@ namespace Lokaverkefni
             this.Focus();
         }
 
-        private void fSpaceBar_KeyDown(object sender, KeyEventArgs e)
+        private void fSpaceBar_KeyUp(object sender, KeyEventArgs e)
         {
             if (timeleft == 0)
             {

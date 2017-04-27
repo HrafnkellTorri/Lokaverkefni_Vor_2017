@@ -27,11 +27,11 @@ namespace Lokaverkefni
 
         public void TengingVidGagnagrunn()
         {
-            server = "188.166.169.15";
+            server = "localhost";//"188.166.169.15";
             database = "Lokaverkefni";
-            uid = "root";
-            password = "Erla321";
-            tengistrengur = "server=" + server + ";userid=" + uid + ";password=" + password + ";database=" + database;
+            uid = "erlalocal";
+            password = "ZIPZm5dpN8Vw2uw6";
+            tengistrengur = "server=" + server + ";port=3306;userid=" + uid + ";password=" + password + ";database=" + database;
             sqltenging = new MySqlConnection(tengistrengur);
         }
 
@@ -57,7 +57,6 @@ namespace Lokaverkefni
             }
             catch (MySqlException ex)
             {
-
                 throw ex;
             }
         }
