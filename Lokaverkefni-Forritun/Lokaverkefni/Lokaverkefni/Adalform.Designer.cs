@@ -32,7 +32,7 @@
             this.lblPlaying = new System.Windows.Forms.Label();
             this.btnTypingGame = new System.Windows.Forms.Button();
             this.btnSpaceBar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnvillage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +69,7 @@
             // 
             this.btnSpaceBar.BackColor = System.Drawing.Color.White;
             this.btnSpaceBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSpaceBar.Location = new System.Drawing.Point(224, 49);
+            this.btnSpaceBar.Location = new System.Drawing.Point(442, 49);
             this.btnSpaceBar.Name = "btnSpaceBar";
             this.btnSpaceBar.Size = new System.Drawing.Size(203, 119);
             this.btnSpaceBar.TabIndex = 5;
@@ -77,23 +77,24 @@
             this.btnSpaceBar.UseVisualStyleBackColor = false;
             this.btnSpaceBar.Click += new System.EventHandler(this.btnSpaceBar_Click);
             // 
-            // button1
+            // btnvillage
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(433, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 119);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Annar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnvillage.BackColor = System.Drawing.Color.White;
+            this.btnvillage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnvillage.Location = new System.Drawing.Point(233, 49);
+            this.btnvillage.Name = "btnvillage";
+            this.btnvillage.Size = new System.Drawing.Size(203, 119);
+            this.btnvillage.TabIndex = 6;
+            this.btnvillage.Text = "Village";
+            this.btnvillage.UseVisualStyleBackColor = false;
+            this.btnvillage.Click += new System.EventHandler(this.btnvillage_Click);
             // 
             // Adalform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 182);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnvillage);
             this.Controls.Add(this.btnSpaceBar);
             this.Controls.Add(this.lblPlaying);
             this.Controls.Add(this.btnTypingGame);
@@ -112,6 +113,6 @@
         private System.Windows.Forms.Button btnTypingGame;
         private System.Windows.Forms.Label lblPlaying;
         private System.Windows.Forms.Button btnSpaceBar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnvillage;
     }
 }

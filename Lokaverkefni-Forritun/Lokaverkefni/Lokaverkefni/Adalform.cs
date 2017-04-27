@@ -43,5 +43,12 @@ namespace Lokaverkefni
             spacebar.Show();
             this.Hide();
         }
+
+        private void btnvillage_Click(object sender, EventArgs e)
+        {
+            Village village = new Village();
+            village.Show();
+            this.Hide();
+        }
     }
 }
