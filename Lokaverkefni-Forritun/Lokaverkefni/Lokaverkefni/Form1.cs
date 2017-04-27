@@ -84,6 +84,10 @@ namespace Lokaverkefni
             Hide();
         }
 
-        
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            fSignUp signup = new fSignUp();
+            signup.Show();
+        }
     }
 }

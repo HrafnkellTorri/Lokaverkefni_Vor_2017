@@ -39,7 +39,7 @@ namespace Lokaverkefni
 
         private void btnSpaceBar_Click(object sender, EventArgs e)
         {
-            SpaceBar spacebar = new SpaceBar();
+            fSpaceBar spacebar = new fSpaceBar();
             spacebar.Show();
             this.Hide();
         }
