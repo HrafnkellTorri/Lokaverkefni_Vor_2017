@@ -104,9 +104,10 @@
             // prbsteel
             // 
             this.prbsteel.Location = new System.Drawing.Point(172, 404);
+            this.prbsteel.Maximum = 30;
             this.prbsteel.Name = "prbsteel";
             this.prbsteel.Size = new System.Drawing.Size(75, 18);
-            this.prbsteel.Step = 100;
+            this.prbsteel.Step = 30;
             this.prbsteel.TabIndex = 5;
             // 
             // prbmeat
@@ -142,9 +143,9 @@
             this.piccoin1.BackColor = System.Drawing.Color.Transparent;
             this.piccoin1.Enabled = false;
             this.piccoin1.Image = global::Lokaverkefni.Properties.Resources.Coin;
-            this.piccoin1.Location = new System.Drawing.Point(746, 426);
+            this.piccoin1.Location = new System.Drawing.Point(751, 432);
             this.piccoin1.Name = "piccoin1";
-            this.piccoin1.Size = new System.Drawing.Size(65, 64);
+            this.piccoin1.Size = new System.Drawing.Size(60, 58);
             this.piccoin1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.piccoin1.TabIndex = 9;
             this.piccoin1.TabStop = false;
@@ -153,17 +154,17 @@
             // 
             this.lbllevel.BackColor = System.Drawing.Color.Transparent;
             this.lbllevel.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllevel.Location = new System.Drawing.Point(817, 9);
+            this.lbllevel.Location = new System.Drawing.Point(791, 9);
             this.lbllevel.Name = "lbllevel";
-            this.lbllevel.Size = new System.Drawing.Size(64, 49);
+            this.lbllevel.Size = new System.Drawing.Size(90, 49);
             this.lbllevel.TabIndex = 11;
-            this.lbllevel.Text = "L";
+            this.lbllevel.Text = "Level 1";
             // 
             // Village
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Lokaverkefni.Properties.Resources.Backround1;
+            this.BackgroundImage = global::Lokaverkefni.Properties.Resources.Backround2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 494);
             this.Controls.Add(this.lbllevel);

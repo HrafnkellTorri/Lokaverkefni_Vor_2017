@@ -49,21 +49,21 @@
             // 
             this.tbUsername.Location = new System.Drawing.Point(27, 40);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(186, 20);
+            this.tbUsername.Size = new System.Drawing.Size(200, 20);
             this.tbUsername.TabIndex = 0;
             // 
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(27, 91);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(186, 20);
+            this.tbPassword.Size = new System.Drawing.Size(200, 20);
             this.tbPassword.TabIndex = 1;
             // 
             // tbPassword2
             // 
             this.tbPassword2.Location = new System.Drawing.Point(27, 145);
             this.tbPassword2.Name = "tbPassword2";
-            this.tbPassword2.Size = new System.Drawing.Size(186, 20);
+            this.tbPassword2.Size = new System.Drawing.Size(200, 20);
             this.tbPassword2.TabIndex = 2;
             // 
             // label1
@@ -115,7 +115,7 @@
             // 
             this.tbEmail.Location = new System.Drawing.Point(27, 246);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(186, 20);
+            this.tbEmail.Size = new System.Drawing.Size(200, 20);
             this.tbEmail.TabIndex = 8;
             // 
             // label6
@@ -130,7 +130,109 @@
             // cbYear
             // 
             this.cbYear.FormattingEnabled = true;
-            this.cbYear.Location = new System.Drawing.Point(154, 197);
+            this.cbYear.Items.AddRange(new object[] {
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001",
+            "2000",
+            "1999",
+            "1998",
+            "1997",
+            "1996",
+            "1995",
+            "1994",
+            "1993",
+            "1992",
+            "1991",
+            "1990",
+            "1989",
+            "1988",
+            "1987",
+            "1986",
+            "1985",
+            "1984",
+            "1983",
+            "1982",
+            "1981",
+            "1980",
+            "1979",
+            "1978",
+            "1977",
+            "1976",
+            "1975",
+            "1974",
+            "1973",
+            "1972",
+            "1971",
+            "1970",
+            "1969",
+            "1968",
+            "1967",
+            "1966",
+            "1965",
+            "1964",
+            "1963",
+            "1962",
+            "1961",
+            "1960",
+            "1959",
+            "1958",
+            "1957",
+            "1956",
+            "1955",
+            "1954",
+            "1953",
+            "1952",
+            "1951",
+            "1950",
+            "1949",
+            "1948",
+            "1947",
+            "1946",
+            "1945",
+            "1944",
+            "1943",
+            "1942",
+            "1941",
+            "1940",
+            "1939",
+            "1938",
+            "1937",
+            "1936",
+            "1935",
+            "1934",
+            "1933",
+            "1932",
+            "1931",
+            "1930",
+            "1929",
+            "1928",
+            "1927",
+            "1926",
+            "1925",
+            "1924",
+            "1923",
+            "1922",
+            "1921",
+            "1920",
+            "1919",
+            "1918",
+            "1917"});
+            this.cbYear.Location = new System.Drawing.Point(168, 197);
             this.cbYear.Name = "cbYear";
             this.cbYear.Size = new System.Drawing.Size(59, 21);
             this.cbYear.TabIndex = 10;
@@ -151,7 +253,7 @@
             "October",
             "November",
             "December"});
-            this.cbMonth.Location = new System.Drawing.Point(65, 197);
+            this.cbMonth.Location = new System.Drawing.Point(79, 197);
             this.cbMonth.Name = "cbMonth";
             this.cbMonth.Size = new System.Drawing.Size(83, 21);
             this.cbMonth.TabIndex = 11;
@@ -193,7 +295,7 @@
             "31"});
             this.cbDay.Location = new System.Drawing.Point(27, 197);
             this.cbDay.Name = "cbDay";
-            this.cbDay.Size = new System.Drawing.Size(32, 21);
+            this.cbDay.Size = new System.Drawing.Size(46, 21);
             this.cbDay.TabIndex = 12;
             // 
             // cbCountry
@@ -398,7 +500,7 @@
             "Zimbabwe"});
             this.cbCountry.Location = new System.Drawing.Point(27, 295);
             this.cbCountry.Name = "cbCountry";
-            this.cbCountry.Size = new System.Drawing.Size(186, 21);
+            this.cbCountry.Size = new System.Drawing.Size(200, 21);
             this.cbCountry.TabIndex = 13;
             // 
             // btnSignUp
