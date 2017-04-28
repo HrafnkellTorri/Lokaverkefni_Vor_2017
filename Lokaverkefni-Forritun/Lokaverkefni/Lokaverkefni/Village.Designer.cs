@@ -41,6 +41,9 @@
             this.lblcoins = new System.Windows.Forms.Label();
             this.piccoin1 = new System.Windows.Forms.PictureBox();
             this.lbllevel = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.lblyear = new System.Windows.Forms.Label();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.piccoin1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,42 +54,50 @@
             // btnwood
             // 
             this.btnwood.BackColor = System.Drawing.Color.Lime;
-            this.btnwood.Location = new System.Drawing.Point(253, 438);
+            this.btnwood.BackgroundImage = global::Lokaverkefni.Properties.Resources.wood1;
+            this.btnwood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnwood.Location = new System.Drawing.Point(250, 556);
             this.btnwood.Name = "btnwood";
-            this.btnwood.Size = new System.Drawing.Size(75, 48);
+            this.btnwood.Size = new System.Drawing.Size(75, 46);
             this.btnwood.TabIndex = 0;
-            this.btnwood.Text = "Wood";
+            this.btnwood.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnwood.UseVisualStyleBackColor = false;
             this.btnwood.Click += new System.EventHandler(this.btnwood_Click);
             // 
             // btnsteel
             // 
             this.btnsteel.BackColor = System.Drawing.Color.Lime;
-            this.btnsteel.Location = new System.Drawing.Point(172, 438);
+            this.btnsteel.BackgroundImage = global::Lokaverkefni.Properties.Resources.steel1;
+            this.btnsteel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnsteel.ImageKey = "(none)";
+            this.btnsteel.Location = new System.Drawing.Point(169, 556);
             this.btnsteel.Name = "btnsteel";
-            this.btnsteel.Size = new System.Drawing.Size(75, 48);
+            this.btnsteel.Size = new System.Drawing.Size(75, 45);
             this.btnsteel.TabIndex = 1;
-            this.btnsteel.Text = "Steel";
+            this.btnsteel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsteel.UseVisualStyleBackColor = false;
             this.btnsteel.Click += new System.EventHandler(this.btnsteel_Click);
             // 
             // btnmeat
             // 
             this.btnmeat.BackColor = System.Drawing.Color.Lime;
-            this.btnmeat.Location = new System.Drawing.Point(10, 438);
+            this.btnmeat.BackgroundImage = global::Lokaverkefni.Properties.Resources.meat;
+            this.btnmeat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnmeat.Location = new System.Drawing.Point(7, 555);
             this.btnmeat.Name = "btnmeat";
-            this.btnmeat.Size = new System.Drawing.Size(75, 48);
+            this.btnmeat.Size = new System.Drawing.Size(75, 45);
             this.btnmeat.TabIndex = 2;
-            this.btnmeat.Text = "Meat";
             this.btnmeat.UseVisualStyleBackColor = false;
             this.btnmeat.Click += new System.EventHandler(this.btnmeat_Click);
             // 
             // btncoal
             // 
             this.btncoal.BackColor = System.Drawing.Color.Lime;
-            this.btncoal.Location = new System.Drawing.Point(91, 438);
+            this.btncoal.BackgroundImage = global::Lokaverkefni.Properties.Resources.coal;
+            this.btncoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btncoal.Location = new System.Drawing.Point(88, 556);
             this.btncoal.Name = "btncoal";
-            this.btncoal.Size = new System.Drawing.Size(75, 48);
+            this.btncoal.Size = new System.Drawing.Size(75, 46);
             this.btncoal.TabIndex = 3;
             this.btncoal.Text = "Coal";
             this.btncoal.UseVisualStyleBackColor = false;
@@ -95,25 +106,28 @@
             // prbwood
             // 
             this.prbwood.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.prbwood.Location = new System.Drawing.Point(253, 404);
+            this.prbwood.Location = new System.Drawing.Point(250, 531);
+            this.prbwood.Maximum = 200;
             this.prbwood.Name = "prbwood";
             this.prbwood.Size = new System.Drawing.Size(75, 18);
             this.prbwood.Step = 1;
+            this.prbwood.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.prbwood.TabIndex = 4;
             // 
             // prbsteel
             // 
-            this.prbsteel.Location = new System.Drawing.Point(172, 404);
+            this.prbsteel.Location = new System.Drawing.Point(169, 531);
             this.prbsteel.Maximum = 30;
             this.prbsteel.Name = "prbsteel";
             this.prbsteel.Size = new System.Drawing.Size(75, 18);
             this.prbsteel.Step = 30;
+            this.prbsteel.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.prbsteel.TabIndex = 5;
             // 
             // prbmeat
             // 
             this.prbmeat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.prbmeat.Location = new System.Drawing.Point(10, 404);
+            this.prbmeat.Location = new System.Drawing.Point(7, 531);
             this.prbmeat.Name = "prbmeat";
             this.prbmeat.Size = new System.Drawing.Size(75, 18);
             this.prbmeat.Step = 100;
@@ -122,17 +136,18 @@
             // 
             // prbcoal
             // 
-            this.prbcoal.Location = new System.Drawing.Point(91, 404);
+            this.prbcoal.Location = new System.Drawing.Point(88, 531);
             this.prbcoal.Name = "prbcoal";
             this.prbcoal.Size = new System.Drawing.Size(75, 18);
             this.prbcoal.Step = 100;
+            this.prbcoal.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.prbcoal.TabIndex = 7;
             // 
             // lblcoins
             // 
             this.lblcoins.BackColor = System.Drawing.Color.Transparent;
             this.lblcoins.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcoins.Location = new System.Drawing.Point(817, 437);
+            this.lblcoins.Location = new System.Drawing.Point(816, 545);
             this.lblcoins.Name = "lblcoins";
             this.lblcoins.Size = new System.Drawing.Size(64, 49);
             this.lblcoins.TabIndex = 8;
@@ -143,7 +158,7 @@
             this.piccoin1.BackColor = System.Drawing.Color.Transparent;
             this.piccoin1.Enabled = false;
             this.piccoin1.Image = global::Lokaverkefni.Properties.Resources.Coin;
-            this.piccoin1.Location = new System.Drawing.Point(751, 432);
+            this.piccoin1.Location = new System.Drawing.Point(750, 540);
             this.piccoin1.Name = "piccoin1";
             this.piccoin1.Size = new System.Drawing.Size(60, 58);
             this.piccoin1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,20 +168,39 @@
             // lbllevel
             // 
             this.lbllevel.BackColor = System.Drawing.Color.Transparent;
-            this.lbllevel.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllevel.Location = new System.Drawing.Point(791, 9);
+            this.lbllevel.Font = new System.Drawing.Font("Onyx", 27.75F);
+            this.lbllevel.Location = new System.Drawing.Point(670, 160);
             this.lbllevel.Name = "lbllevel";
-            this.lbllevel.Size = new System.Drawing.Size(90, 49);
+            this.lbllevel.Size = new System.Drawing.Size(222, 49);
             this.lbllevel.TabIndex = 11;
-            this.lbllevel.Text = "Level 1";
+            this.lbllevel.Text = "Level 1 : The Dark Age";
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // lblyear
+            // 
+            this.lblyear.BackColor = System.Drawing.Color.Transparent;
+            this.lblyear.Font = new System.Drawing.Font("Onyx", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblyear.Location = new System.Drawing.Point(-1, 9);
+            this.lblyear.Name = "lblyear";
+            this.lblyear.Size = new System.Drawing.Size(151, 37);
+            this.lblyear.TabIndex = 12;
+            this.lblyear.Text = "Year : 0";
+            // 
+            // timer3
+            // 
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // Village
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Lokaverkefni.Properties.Resources.Backround2;
+            this.BackgroundImage = global::Lokaverkefni.Properties.Resources.Backround3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(904, 494);
+            this.ClientSize = new System.Drawing.Size(904, 603);
+            this.Controls.Add(this.lblyear);
             this.Controls.Add(this.lbllevel);
             this.Controls.Add(this.piccoin1);
             this.Controls.Add(this.lblcoins);
@@ -201,5 +235,8 @@
         private System.Windows.Forms.Label lblcoins;
         private System.Windows.Forms.PictureBox piccoin1;
         private System.Windows.Forms.Label lbllevel;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label lblyear;
+        private System.Windows.Forms.Timer timer3;
     }
 }
