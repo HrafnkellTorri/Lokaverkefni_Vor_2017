@@ -55,6 +55,7 @@
     <Compile Include="Adalform.Designer.cs">
       <DependentUpon>Adalform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adferdir.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

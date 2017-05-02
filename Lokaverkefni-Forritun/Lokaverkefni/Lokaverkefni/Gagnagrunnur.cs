@@ -81,5 +81,16 @@ namespace Lokaverkefni
             }
             return passw;
         }
+
+        public void SignUpUser(string user, string passw, string date, string email, string country)
+        {
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "INSERT INTO Users (username, password, date_of_birth, email, country) VALUES ('" + user + "','" + passw + "','" + date + "','" + email + "','" + country + "')";
+                mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                mySQLskipun.ExecuteNonQuery();
+                CloseConnection();
+            }
+        }
     }
 }

@@ -536,6 +536,7 @@
             this.Controls.Add(this.tbUsername);
             this.Name = "fSignUp";
             this.Text = "SignUp";
+            this.Load += new System.EventHandler(this.fSignUp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
