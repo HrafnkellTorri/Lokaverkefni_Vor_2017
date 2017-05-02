@@ -44,7 +44,19 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.lblyear = new System.Windows.Forms.Label();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.picHouse_2 = new System.Windows.Forms.PictureBox();
+            this.picHouse_3 = new System.Windows.Forms.PictureBox();
+            this.picHouse_1 = new System.Windows.Forms.PictureBox();
+            this.picBurnedhouse_1 = new System.Windows.Forms.PictureBox();
+            this.picBurnedhouse_2 = new System.Windows.Forms.PictureBox();
+            this.picBurnedhouse_3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.piccoin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHouse_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHouse_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHouse_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBurnedhouse_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBurnedhouse_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBurnedhouse_3)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -193,6 +205,84 @@
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+            // picHouse_2
+            // 
+            this.picHouse_2.BackColor = System.Drawing.Color.Transparent;
+            this.picHouse_2.Enabled = false;
+            this.picHouse_2.Image = global::Lokaverkefni.Properties.Resources.Blue_house;
+            this.picHouse_2.Location = new System.Drawing.Point(435, 429);
+            this.picHouse_2.Name = "picHouse_2";
+            this.picHouse_2.Size = new System.Drawing.Size(133, 126);
+            this.picHouse_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHouse_2.TabIndex = 14;
+            this.picHouse_2.TabStop = false;
+            this.picHouse_2.Visible = false;
+            // 
+            // picHouse_3
+            // 
+            this.picHouse_3.BackColor = System.Drawing.Color.Transparent;
+            this.picHouse_3.Enabled = false;
+            this.picHouse_3.Image = global::Lokaverkefni.Properties.Resources.Blue_house;
+            this.picHouse_3.Location = new System.Drawing.Point(562, 429);
+            this.picHouse_3.Name = "picHouse_3";
+            this.picHouse_3.Size = new System.Drawing.Size(133, 126);
+            this.picHouse_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHouse_3.TabIndex = 15;
+            this.picHouse_3.TabStop = false;
+            this.picHouse_3.Visible = false;
+            // 
+            // picHouse_1
+            // 
+            this.picHouse_1.BackColor = System.Drawing.Color.Transparent;
+            this.picHouse_1.Enabled = false;
+            this.picHouse_1.Image = global::Lokaverkefni.Properties.Resources.Blue_house;
+            this.picHouse_1.Location = new System.Drawing.Point(331, 429);
+            this.picHouse_1.Name = "picHouse_1";
+            this.picHouse_1.Size = new System.Drawing.Size(133, 126);
+            this.picHouse_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHouse_1.TabIndex = 13;
+            this.picHouse_1.TabStop = false;
+            this.picHouse_1.Visible = false;
+            // 
+            // picBurnedhouse_1
+            // 
+            this.picBurnedhouse_1.BackColor = System.Drawing.Color.Transparent;
+            this.picBurnedhouse_1.Enabled = false;
+            this.picBurnedhouse_1.Image = global::Lokaverkefni.Properties.Resources.Burning_House;
+            this.picBurnedhouse_1.Location = new System.Drawing.Point(331, 429);
+            this.picBurnedhouse_1.Name = "picBurnedhouse_1";
+            this.picBurnedhouse_1.Size = new System.Drawing.Size(133, 126);
+            this.picBurnedhouse_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBurnedhouse_1.TabIndex = 16;
+            this.picBurnedhouse_1.TabStop = false;
+            this.picBurnedhouse_1.Visible = false;
+            // 
+            // picBurnedhouse_2
+            // 
+            this.picBurnedhouse_2.BackColor = System.Drawing.Color.Transparent;
+            this.picBurnedhouse_2.Enabled = false;
+            this.picBurnedhouse_2.Image = global::Lokaverkefni.Properties.Resources.Burning_House;
+            this.picBurnedhouse_2.Location = new System.Drawing.Point(562, 429);
+            this.picBurnedhouse_2.Name = "picBurnedhouse_2";
+            this.picBurnedhouse_2.Size = new System.Drawing.Size(133, 126);
+            this.picBurnedhouse_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBurnedhouse_2.TabIndex = 17;
+            this.picBurnedhouse_2.TabStop = false;
+            this.picBurnedhouse_2.Visible = false;
+            // 
+            // picBurnedhouse_3
+            // 
+            this.picBurnedhouse_3.BackColor = System.Drawing.Color.Transparent;
+            this.picBurnedhouse_3.Enabled = false;
+            this.picBurnedhouse_3.Image = global::Lokaverkefni.Properties.Resources.Burning_House_2;
+            this.picBurnedhouse_3.Location = new System.Drawing.Point(435, 429);
+            this.picBurnedhouse_3.Name = "picBurnedhouse_3";
+            this.picBurnedhouse_3.Size = new System.Drawing.Size(133, 126);
+            this.picBurnedhouse_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBurnedhouse_3.TabIndex = 18;
+            this.picBurnedhouse_3.TabStop = false;
+            this.picBurnedhouse_3.Visible = false;
+            // 
             // Village
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,6 +290,12 @@
             this.BackgroundImage = global::Lokaverkefni.Properties.Resources.Backround3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 603);
+            this.Controls.Add(this.picBurnedhouse_3);
+            this.Controls.Add(this.picBurnedhouse_2);
+            this.Controls.Add(this.picBurnedhouse_1);
+            this.Controls.Add(this.picHouse_3);
+            this.Controls.Add(this.picHouse_1);
+            this.Controls.Add(this.picHouse_2);
             this.Controls.Add(this.lblyear);
             this.Controls.Add(this.lbllevel);
             this.Controls.Add(this.piccoin1);
@@ -217,6 +313,12 @@
             this.Text = "Village";
             this.Load += new System.EventHandler(this.Village_Load);
             ((System.ComponentModel.ISupportInitialize)(this.piccoin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHouse_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHouse_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHouse_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBurnedhouse_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBurnedhouse_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBurnedhouse_3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -238,5 +340,11 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label lblyear;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.PictureBox picHouse_2;
+        private System.Windows.Forms.PictureBox picHouse_3;
+        private System.Windows.Forms.PictureBox picHouse_1;
+        private System.Windows.Forms.PictureBox picBurnedhouse_1;
+        private System.Windows.Forms.PictureBox picBurnedhouse_2;
+        private System.Windows.Forms.PictureBox picBurnedhouse_3;
     }
 }

@@ -33,6 +33,7 @@
             this.btnTypingGame = new System.Windows.Forms.Button();
             this.btnSpaceBar = new System.Windows.Forms.Button();
             this.btnvillage = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +48,7 @@
             // lblPlaying
             // 
             this.lblPlaying.AutoSize = true;
-            this.lblPlaying.Location = new System.Drawing.Point(240, 24);
+            this.lblPlaying.Location = new System.Drawing.Point(439, 24);
             this.lblPlaying.Name = "lblPlaying";
             this.lblPlaying.Size = new System.Drawing.Size(97, 13);
             this.lblPlaying.TabIndex = 4;
@@ -90,11 +91,25 @@
             this.btnvillage.UseVisualStyleBackColor = false;
             this.btnvillage.Click += new System.EventHandler(this.btnvillage_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.button1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.Location = new System.Drawing.Point(12, 174);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(633, 28);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Leader boards";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Adalform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 182);
+            this.ClientSize = new System.Drawing.Size(651, 211);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnvillage);
             this.Controls.Add(this.btnSpaceBar);
             this.Controls.Add(this.lblPlaying);
@@ -115,5 +130,6 @@
         private System.Windows.Forms.Label lblPlaying;
         private System.Windows.Forms.Button btnSpaceBar;
         private System.Windows.Forms.Button btnvillage;
+        private System.Windows.Forms.Button button1;
     }
 }

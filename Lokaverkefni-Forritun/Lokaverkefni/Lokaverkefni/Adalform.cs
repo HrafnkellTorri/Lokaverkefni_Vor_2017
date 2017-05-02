@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* Höfundar : Erla Óskarsdóttir & Hrafnkell Þorri Þrastarson
+   FOR2C3U Vorönn 2017 tækniskólinn */
+
 namespace Lokaverkefni
 {
     public partial class Adalform : Form
     {
-        string username = "";
+        string username = ""; 
         public Adalform(string user)
         {
             InitializeComponent();
@@ -35,22 +38,27 @@ namespace Lokaverkefni
         private void btnTypingGame_Click(object sender, EventArgs e)
         {
             TypingGame typinggame = new TypingGame();
-            typinggame.Show();
+            typinggame.Show(); //synt form fyrir typing game
             this.Hide();
         }
 
         private void btnSpaceBar_Click(object sender, EventArgs e)
         {
             fSpaceBar spacebar = new fSpaceBar();
-            spacebar.Show();
-            this.Hide();
+            spacebar.Show(); //synt form fyrir spacebar 
+            this.Hide(); //falið valmynd
         }
 
         private void btnvillage_Click(object sender, EventArgs e)
         {
             Village village = new Village();
-            village.Show();
-            this.Hide();
+            village.Show(); //synt form fyrir Village
+            this.Hide(); // falið valmynd
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://188.166.169.15/");
         }
     }
 }

@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* Höfundar : Erla Óskarsdóttir & Hrafnkell Þorri Þrastarson
+   FOR2C3U Vorönn 2017 tækniskólinn */
+
 namespace Lokaverkefni
 {
     public partial class fSpaceBar : Form

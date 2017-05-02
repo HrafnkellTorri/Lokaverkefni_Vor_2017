@@ -80,14 +80,14 @@ namespace Lokaverkefni
         private void btnGestur_Click(object sender, EventArgs e)
         {
             Adalform adalform = new Adalform("Guest");
-            adalform.Show();
+            adalform.Show(); //Sýnt form
             Hide();
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            fSignUp signup = new fSignUp();
-            signup.Show();
+            fSignUp signup = new fSignUp(); 
+            signup.Show(); //sýnt signup formið
         }
     }
 }

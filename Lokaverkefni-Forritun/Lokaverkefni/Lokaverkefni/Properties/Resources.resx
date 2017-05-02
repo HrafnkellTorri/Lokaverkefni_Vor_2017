@@ -130,6 +130,12 @@
   <data name="Coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Burning House" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Burning House.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="typing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\typing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Backround2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Backround2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,6 +144,9 @@
   </data>
   <data name="coal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wood1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wood1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Backround3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Backround3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,13 +160,13 @@
   <data name="Backround" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Backround.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="typing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\typing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Blue_house" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue_house.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="steel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\steel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wood1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wood1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Burning House_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Burning House_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
