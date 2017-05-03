@@ -12,9 +12,27 @@ namespace Lokaverkefni
 {
     public partial class TypingGame : Form
     {
-        public TypingGame()
+
+        Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
+
+        string username = "";
+
+        public TypingGame(string user)
         {
             InitializeComponent();
+
+            username = user;
+
+            //Hér er reynt að tengjast við gagnagrunnin sjálfan, sett í try/catch svo hægt sé að grípa villu ef hún kemur upp án þess að forritið krassar
+            try
+            {
+                gagnagrunnur.TengingVidGagnagrunn();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox kemur upp ef upp kemur villa
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         const int wordCount = 210;
@@ -47,6 +65,8 @@ namespace Lokaverkefni
                 "wait", "walk", "wedding", "welcome", "water", "window", "world", "winter", "while", 
                 "yard", "yell", "yet", "you", "young", "your", "zero", "zoo"};
 
+        Adferdir adferdir = new Adferdir();
+
         private void TypingGame_Load(object sender, EventArgs e)
         {
             tbWord.Enabled = false;
@@ -62,7 +82,7 @@ namespace Lokaverkefni
 
         private void btnInstructions_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+            MessageBox.Show(adferdir.instructionsTyping());
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -98,9 +118,16 @@ namespace Lokaverkefni
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            int score = 0, userID = 0;
+
             if (timeleft == 0)
             {
                 timer1.Stop();
+                tbWord.Enabled = false;
+                btnStart.Visible = true;
+                btnMenu.Show();
+                btnInstructions.Show();
+                tbWord.Clear();
             }
             else
             {
@@ -163,14 +190,7 @@ namespace Lokaverkefni
                 lblCombo.Text = "5x Combo!";
             }
 
-            if (timeleft <= 0)
-            {
-                tbWord.Enabled = false;
-                btnStart.Visible = true;
-                btnMenu.Show();
-                btnInstructions.Show();
-                tbWord.Clear();
-            }
+            
 
 
         }

@@ -4,7 +4,6 @@ C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun
 C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.Adalform.resources
 C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fLokaverkefni.resources
 C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.Properties.Resources.resources
-C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.SpaceBar.resources
 C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.TypingGame.resources
 C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.csproj.GenerateResource.Cache
 C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.exe
@@ -37,3 +36,7 @@ C:\Users\Erla\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokav
 C:\Users\Erla\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fSignUp.resources
 C:\Users\1610972769\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fSignUp.resources
 C:\Users\1610972769\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fSpaceBar.resources
+C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.csprojResolveAssemblyReference.cache
+C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fSignUp.resources
+C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fSpaceBar.resources
+C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.Village.resources

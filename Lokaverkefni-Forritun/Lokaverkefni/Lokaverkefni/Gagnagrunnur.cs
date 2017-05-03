@@ -92,5 +92,58 @@ namespace Lokaverkefni
                 CloseConnection();
             }
         }
+
+        public int FindHighscore(string username, int game_ID)
+        {
+            int highscore = 0;
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "SELECT score FROM Scores JOIN Users ON Scores.user_ID = Users.ID WHERE username = '" + username + "' AND game_ID = " + game_ID + ";";
+                mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                sqllesari = mySQLskipun.ExecuteReader();
+                while (sqllesari.Read())
+                {
+                    for (int i = 0; i < sqllesari.FieldCount; i++)
+                    {
+                        highscore += (Convert.ToInt32(sqllesari.GetValue(i)));
+                    }
+                }
+                CloseConnection();
+                return highscore;
+            }
+            return highscore;
+        }
+
+        public int FindUser_ID(string username)
+        {
+            int user_ID = 0;
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "SELECT ID FROM Users WHERE username = '" + username + ";";
+                mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                sqllesari = mySQLskipun.ExecuteReader();
+                while (sqllesari.Read())
+                {
+                    for (int i = 0; i < sqllesari.FieldCount; i++)
+                    {
+                        user_ID += (Convert.ToInt32(sqllesari.GetValue(i)));
+                    }
+                }
+                CloseConnection();
+                return user_ID;
+            }
+            return user_ID;
+        }
+
+        public void UpdateHighscore(int userID, int newHScore, int game_ID)
+        {
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "INSERT INTO Scores (user_ID, game_ID, score) VALUES ('" + userID + "','" + game_ID + "','" + newHScore + "';)";
+                mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                mySQLskipun.ExecuteNonQuery();
+                CloseConnection();
+            }
+        }
     }
 }

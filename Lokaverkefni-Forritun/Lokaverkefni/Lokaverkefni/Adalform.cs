@@ -37,7 +37,7 @@ namespace Lokaverkefni
 
         private void btnTypingGame_Click(object sender, EventArgs e)
         {
-            TypingGame typinggame = new TypingGame();
+            TypingGame typinggame = new TypingGame(username);
             typinggame.Show(); //synt form fyrir typing game
             this.Hide();
         }
