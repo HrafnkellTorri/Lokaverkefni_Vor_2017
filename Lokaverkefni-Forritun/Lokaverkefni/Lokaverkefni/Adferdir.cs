@@ -70,7 +70,17 @@ namespace Lokaverkefni
         public string instructionsTyping ()
         {
             return "Type as many words as you can and try to be fast! When you get 5 words in a row you get 2x combo wich gives you extra points, "
-            + "keep getting many words right in a row and you could get 5x combo! Get a word wrong and you will lose your combo and 5 points! Stay safe";
+            + "keep getting many words right in a row and you could get 5x combo! Get a word wrong and you will lose your combo and 5 points! Stay safe!";
+        }
+
+        public string instructionsVillage()
+        {
+            return "Village";
+        }
+
+        public string instructionsSpaceBar()
+        {
+            return "Press space as many times as you can in 10 seconds! Good Luck!";
         }
     }
 }

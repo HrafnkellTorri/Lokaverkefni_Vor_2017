@@ -51,7 +51,7 @@ namespace Lokaverkefni
 
         private void btnvillage_Click(object sender, EventArgs e)
         {
-            Village village = new Village();
+            Village village = new Village(username);
             village.Show(); //synt form fyrir Village
             this.Hide(); // falið valmynd
         }

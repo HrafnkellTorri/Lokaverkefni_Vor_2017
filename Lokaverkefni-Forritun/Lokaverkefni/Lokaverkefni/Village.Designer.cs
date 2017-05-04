@@ -50,6 +50,9 @@
             this.picBurnedhouse_1 = new System.Windows.Forms.PictureBox();
             this.picBurnedhouse_2 = new System.Windows.Forms.PictureBox();
             this.picBurnedhouse_3 = new System.Windows.Forms.PictureBox();
+            this.btnInstructions = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.piccoin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHouse_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHouse_3)).BeginInit();
@@ -283,6 +286,40 @@
             this.picBurnedhouse_3.TabStop = false;
             this.picBurnedhouse_3.Visible = false;
             // 
+            // btnInstructions
+            // 
+            this.btnInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstructions.Location = new System.Drawing.Point(772, 9);
+            this.btnInstructions.Name = "btnInstructions";
+            this.btnInstructions.Size = new System.Drawing.Size(120, 32);
+            this.btnInstructions.TabIndex = 19;
+            this.btnInstructions.Text = "Instructions";
+            this.btnInstructions.UseVisualStyleBackColor = true;
+            this.btnInstructions.Click += new System.EventHandler(this.btnInstructions_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(646, 9);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(120, 32);
+            this.btnMenu.TabIndex = 20;
+            this.btnMenu.Text = "Back to menu";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnStart
+            // 
+            this.btnStart.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnStart.Font = new System.Drawing.Font("Onyx", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(117, 231);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(222, 63);
+            this.btnStart.TabIndex = 21;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
             // Village
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,6 +327,9 @@
             this.BackgroundImage = global::Lokaverkefni.Properties.Resources.Backround3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 603);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.btnInstructions);
             this.Controls.Add(this.picBurnedhouse_3);
             this.Controls.Add(this.picBurnedhouse_2);
             this.Controls.Add(this.picBurnedhouse_1);
@@ -346,5 +386,8 @@
         private System.Windows.Forms.PictureBox picBurnedhouse_1;
         private System.Windows.Forms.PictureBox picBurnedhouse_2;
         private System.Windows.Forms.PictureBox picBurnedhouse_3;
+        private System.Windows.Forms.Button btnInstructions;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Button btnStart;
     }
 }

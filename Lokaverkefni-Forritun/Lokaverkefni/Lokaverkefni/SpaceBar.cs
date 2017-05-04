@@ -37,6 +37,8 @@ namespace Lokaverkefni
 
         int timeleft = 10, count = 0;
 
+        Adferdir adferdir = new Adferdir();
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             int userID = 0, OldHScore = 0;
@@ -77,7 +79,6 @@ namespace Lokaverkefni
             base.OnFormClosing(e);
 
             Application.Exit();
-
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -89,7 +90,7 @@ namespace Lokaverkefni
 
         private void btnInstructions_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+            MessageBox.Show(adferdir.instructionsSpaceBar());
         }
 
         private void btnStart_Click(object sender, EventArgs e)
