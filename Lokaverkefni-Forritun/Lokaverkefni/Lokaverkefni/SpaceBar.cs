@@ -15,18 +15,54 @@ namespace Lokaverkefni
 {
     public partial class fSpaceBar : Form
     {
-        public fSpaceBar()
+        Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
+        string username = "";
+
+        public fSpaceBar(string user)
         {
+            username = user;
             InitializeComponent();
+
+            //Hér er reynt að tengjast við gagnagrunnin sjálfan, sett í try/catch svo hægt sé að grípa villu ef hún kemur upp án þess að forritið krassar
+            try
+            {
+                gagnagrunnur.TengingVidGagnagrunn();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox kemur upp ef upp kemur villa
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         int timeleft = 10, count = 0;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            int userID = 0, OldHScore = 0;
             if (timeleft == 0)
             {
                 timer1.Stop();
+                btnStart.Enabled = true;
+                btnInstructions.Enabled = true;
+                btnMenu.Enabled = true;
+
+                if (username != "Guest")
+                {
+                    userID = gagnagrunnur.FindUser_ID(username);
+                    OldHScore = gagnagrunnur.FindHighscore(username, 1);
+
+                    if (OldHScore == 0)
+                    {
+                        gagnagrunnur.InsertHighscore(userID, count, 1);
+                        MessageBox.Show("New Highscore!!");
+                    }
+                    else if (count > OldHScore && OldHScore != 0)
+                    {
+                        MessageBox.Show("New Highscore!!");
+                        gagnagrunnur.UpdateHighscore(userID, count, 1);
+                    }
+                }
             }
             else
             {
@@ -47,7 +83,7 @@ namespace Lokaverkefni
         private void btnMenu_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Adalform menu = new Adalform("");
+            Adalform menu = new Adalform(username);
             menu.Show();
         }
 

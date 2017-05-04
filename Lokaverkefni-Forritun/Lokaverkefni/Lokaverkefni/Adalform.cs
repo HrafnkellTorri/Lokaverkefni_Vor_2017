@@ -44,7 +44,7 @@ namespace Lokaverkefni
 
         private void btnSpaceBar_Click(object sender, EventArgs e)
         {
-            fSpaceBar spacebar = new fSpaceBar();
+            fSpaceBar spacebar = new fSpaceBar(username);
             spacebar.Show(); //synt form fyrir spacebar 
             this.Hide(); //falið valmynd
         }

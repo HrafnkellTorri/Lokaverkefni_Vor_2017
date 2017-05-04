@@ -98,7 +98,7 @@ namespace Lokaverkefni
             int highscore = 0;
             if (OpenConnection() == true)
             {
-                fyrirspurn = "SELECT score FROM Scores JOIN Users ON Scores.user_ID = Users.ID WHERE username = '" + username + "' AND game_ID = " + game_ID + ";";
+                fyrirspurn = "SELECT score FROM Scores JOIN Users ON Scores.user_ID = Users.ID WHERE username = '" + username + "' AND game_ID = " + game_ID + "";
                 mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 sqllesari = mySQLskipun.ExecuteReader();
                 while (sqllesari.Read())
@@ -119,7 +119,7 @@ namespace Lokaverkefni
             int user_ID = 0;
             if (OpenConnection() == true)
             {
-                fyrirspurn = "SELECT ID FROM Users WHERE username = '" + username + ";";
+                fyrirspurn = "SELECT ID FROM Users WHERE username = '" + username + "';";
                 mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 sqllesari = mySQLskipun.ExecuteReader();
                 while (sqllesari.Read())
@@ -135,11 +135,22 @@ namespace Lokaverkefni
             return user_ID;
         }
 
-        public void UpdateHighscore(int userID, int newHScore, int game_ID)
+        public void UpdateHighscore(int userID, int newHScore, int gameID)
         {
             if (OpenConnection() == true)
             {
-                fyrirspurn = "INSERT INTO Scores (user_ID, game_ID, score) VALUES ('" + userID + "','" + game_ID + "','" + newHScore + "';)";
+                fyrirspurn = "UPDATE Scores SET score = " + newHScore + " WHERE user_ID = " + userID + " AND game_ID = " + gameID + "";
+                mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
+                mySQLskipun.ExecuteNonQuery();
+                CloseConnection();
+            }
+        }
+
+        public void InsertHighscore(int userID, int newHScore, int game_ID)
+        {
+            if (OpenConnection() == true)
+            {
+                fyrirspurn = "INSERT INTO Scores (user_ID, game_ID, score) VALUES (" + userID + "," + game_ID + "," + newHScore + ")";
                 mySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 mySQLskipun.ExecuteNonQuery();
                 CloseConnection();
