@@ -27,7 +27,7 @@ namespace Lokaverkefni
 
         public void TengingVidGagnagrunn()
         {
-            server = "localhost";//"188.166.169.15";
+            server = "localhost"; //"188.166.169.15";
             database = "Lokaverkefni";
             uid = "erlalocal";
             password = "ZIPZm5dpN8Vw2uw6";

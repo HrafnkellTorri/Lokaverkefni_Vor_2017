@@ -15,15 +15,21 @@ namespace Lokaverkefni
 {
     public partial class Adalform : Form
     {
-        string username = ""; 
+        //username breyta
+        string username = "";
+
+        //formið tekur inn username 
         public Adalform(string user)
         {
             InitializeComponent();
-            username = user;
+
+            username = user; //username-ið sett í breytu
         }
 
+        //Þetta kemur upp þegar formið hleður sig
         private void Adalform_Load(object sender, EventArgs e)
         {
+            //username skrifað í label og gert sýnilegt fyrir notanda
             lblPlaying.Text += " " + username;
         }
 
@@ -39,7 +45,7 @@ namespace Lokaverkefni
         {
             TypingGame typinggame = new TypingGame(username);
             typinggame.Show(); //synt form fyrir typing game
-            this.Hide();
+            this.Hide(); //falið valmynd
         }
 
         private void btnSpaceBar_Click(object sender, EventArgs e)

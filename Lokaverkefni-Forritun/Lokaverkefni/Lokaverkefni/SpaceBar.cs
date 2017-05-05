@@ -15,13 +15,19 @@ namespace Lokaverkefni
 {
     public partial class fSpaceBar : Form
     {
+        //Sótt er í klasann Gagnagrunnur sem inniheldur allar aðferðir til að tengjast gagnagrunninum og sem innihalda skipanir til að setja uppýsingar í töflu
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
+
+        //username breyta
         string username = "";
 
+        //forritið tekur inn username
         public fSpaceBar(string user)
         {
-            username = user;
             InitializeComponent();
+
+            //username-ið sett í breytu
+            username = user;
 
             //Hér er reynt að tengjast við gagnagrunnin sjálfan, sett í try/catch svo hægt sé að grípa villu ef hún kemur upp án þess að forritið krassar
             try
@@ -35,8 +41,10 @@ namespace Lokaverkefni
             }
         }
 
+        //Breytur skilgreindar
         int timeleft = 10, count = 0;
 
+        //Sótt í klasann Aðferðir sem inniheldur ýmsar aðferðir fyrir forritið
         Adferdir adferdir = new Adferdir();
 
         private void timer1_Tick(object sender, EventArgs e)
