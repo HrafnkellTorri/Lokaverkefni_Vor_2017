@@ -39,18 +39,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.Size = new System.Drawing.Size(124, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Choose game:";
             // 
             // lblPlaying
             // 
             this.lblPlaying.AutoSize = true;
-            this.lblPlaying.Location = new System.Drawing.Point(439, 24);
+            this.lblPlaying.BackColor = System.Drawing.Color.Transparent;
+            this.lblPlaying.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaying.Location = new System.Drawing.Point(359, 26);
             this.lblPlaying.Name = "lblPlaying";
-            this.lblPlaying.Size = new System.Drawing.Size(97, 13);
+            this.lblPlaying.Size = new System.Drawing.Size(162, 20);
             this.lblPlaying.TabIndex = 4;
             this.lblPlaying.Text = "You are playing as:";
             this.lblPlaying.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -94,11 +99,11 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button1.Location = new System.Drawing.Point(12, 174);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(633, 28);
+            this.button1.Size = new System.Drawing.Size(633, 35);
             this.button1.TabIndex = 7;
             this.button1.Text = "Leader boards";
             this.button1.UseVisualStyleBackColor = false;
@@ -108,7 +113,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 211);
+            this.BackColor = System.Drawing.Color.NavajoWhite;
+            this.BackgroundImage = global::Lokaverkefni.Properties.Resources.back1;
+            this.ClientSize = new System.Drawing.Size(651, 222);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnvillage);
             this.Controls.Add(this.btnSpaceBar);
