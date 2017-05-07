@@ -56,6 +56,7 @@ namespace Lokaverkefni
                 btnStart.Enabled = true;
                 btnInstructions.Enabled = true;
                 btnMenu.Enabled = true;
+                btnStart.Focus();
 
                 if (username != "Guest")
                 {

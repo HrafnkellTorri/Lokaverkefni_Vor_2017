@@ -244,15 +244,15 @@ namespace Lokaverkefni
             timer1.Stop(); timer2.Stop(); meat = 0; coal = 0;
             hidebtns();
             showruins();
+            btnMenu.Show();
+            btnStart.Show();
                 
             if (meat <= 8)
             {
-                prbmeat.Value = 0;
                 MessageBox.Show("You have lost! \nYour people ran out of food and starved to death!");
             }
-            else if (coal <= 6)
+            if (coal <= 6)
             {
-                prbcoal.Value = 0;
                 MessageBox.Show("You have lost! \nYour people ran out of coal and froze to death!");
             }
         }

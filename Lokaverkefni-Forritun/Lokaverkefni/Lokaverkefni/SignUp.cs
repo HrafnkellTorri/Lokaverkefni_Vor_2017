@@ -90,14 +90,7 @@ namespace Lokaverkefni
                         gagnagrunnur.SignUpUser(username, passw1, date, email, country);
                         //Ef allt fór vel kemur upp messagebox sem segir til um það
                         MessageBox.Show("Signup Successful! \nWelcome to the group");
-                        tbUsername.Clear();
-                        tbPassword.Clear();
-                        tbPassword2.Clear();
-                        tbEmail.Clear();
-                        cbDay.Text = "";
-                        cbMonth.Text = "";
-                        cbYear.Text = "";
-                        cbCountry.Text = "";
+                        this.Hide();
                     }
                     catch (Exception) //ef upp kemur villa
                     {

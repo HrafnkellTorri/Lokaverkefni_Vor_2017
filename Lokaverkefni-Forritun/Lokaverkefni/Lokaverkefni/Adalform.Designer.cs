@@ -53,7 +53,7 @@
             this.lblPlaying.AutoSize = true;
             this.lblPlaying.BackColor = System.Drawing.Color.Transparent;
             this.lblPlaying.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaying.Location = new System.Drawing.Point(359, 26);
+            this.lblPlaying.Location = new System.Drawing.Point(365, 26);
             this.lblPlaying.Name = "lblPlaying";
             this.lblPlaying.Size = new System.Drawing.Size(162, 20);
             this.lblPlaying.TabIndex = 4;
@@ -75,24 +75,24 @@
             // btnSpaceBar
             // 
             this.btnSpaceBar.BackColor = System.Drawing.Color.White;
+            this.btnSpaceBar.BackgroundImage = global::Lokaverkefni.Properties.Resources.spacebar;
             this.btnSpaceBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSpaceBar.Location = new System.Drawing.Point(442, 49);
+            this.btnSpaceBar.Location = new System.Drawing.Point(433, 49);
             this.btnSpaceBar.Name = "btnSpaceBar";
             this.btnSpaceBar.Size = new System.Drawing.Size(203, 119);
             this.btnSpaceBar.TabIndex = 5;
-            this.btnSpaceBar.Text = "Space";
             this.btnSpaceBar.UseVisualStyleBackColor = false;
             this.btnSpaceBar.Click += new System.EventHandler(this.btnSpaceBar_Click);
             // 
             // btnvillage
             // 
             this.btnvillage.BackColor = System.Drawing.Color.White;
+            this.btnvillage.BackgroundImage = global::Lokaverkefni.Properties.Resources.Blue_house1;
             this.btnvillage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnvillage.Location = new System.Drawing.Point(233, 49);
+            this.btnvillage.Location = new System.Drawing.Point(224, 49);
             this.btnvillage.Name = "btnvillage";
             this.btnvillage.Size = new System.Drawing.Size(203, 119);
             this.btnvillage.TabIndex = 6;
-            this.btnvillage.Text = "Village";
             this.btnvillage.UseVisualStyleBackColor = false;
             this.btnvillage.Click += new System.EventHandler(this.btnvillage_Click);
             // 
@@ -103,7 +103,7 @@
             this.button1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button1.Location = new System.Drawing.Point(12, 174);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(633, 35);
+            this.button1.Size = new System.Drawing.Size(624, 35);
             this.button1.TabIndex = 7;
             this.button1.Text = "Leader boards";
             this.button1.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.BackgroundImage = global::Lokaverkefni.Properties.Resources.back1;
-            this.ClientSize = new System.Drawing.Size(651, 222);
+            this.ClientSize = new System.Drawing.Size(646, 223);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnvillage);
             this.Controls.Add(this.btnSpaceBar);

@@ -133,6 +133,16 @@ namespace Lokaverkefni.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Blue_house1 {
+            get {
+                object obj = ResourceManager.GetObject("Blue_house1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap brain_logo {
             get {
                 object obj = ResourceManager.GetObject("brain_logo", resourceCulture);
@@ -196,6 +206,16 @@ namespace Lokaverkefni.Properties {
         internal static System.Drawing.Bitmap meat {
             get {
                 object obj = ResourceManager.GetObject("meat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spacebar {
+            get {
+                object obj = ResourceManager.GetObject("spacebar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

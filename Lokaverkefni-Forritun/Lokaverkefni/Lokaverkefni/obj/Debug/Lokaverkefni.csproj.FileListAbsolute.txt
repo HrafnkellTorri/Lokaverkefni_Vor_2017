@@ -40,3 +40,5 @@ C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun
 C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fSignUp.resources
 C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.fSpaceBar.resources
 C:\Users\0901972079\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\obj\Debug\Lokaverkefni.Village.resources
+C:\Users\Erla\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\bin\Debug\Lokaverkefni_Klasasafn.dll
+C:\Users\Erla\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni\Lokaverkefni\bin\Debug\Lokaverkefni_Klasasafn.pdb
