@@ -3,6 +3,7 @@ The Database has 5 tables which all properly refrence each other.
 The only way to insert anything into the database is to go the 188.166.169.15/phpmyadmin or use the C# project we made.
 Through the C# program we have a sign up form where you can create an User account.
 There you can only select your age and nationality from a list not freely insert anything.
+You can see what company made each game and who was the game designer.
 
 you can see the database in action http://188.166.169.15 <---- Here.
 
