@@ -1,5 +1,4 @@
 C:\Users\Erla\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni_Klasasafn\Lokaverkefni_Klasasafn\bin\Debug\Lokaverkefni_Klasasafn.dll
 C:\Users\Erla\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni_Klasasafn\Lokaverkefni_Klasasafn\bin\Debug\Lokaverkefni_Klasasafn.pdb
-C:\Users\Erla\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni_Klasasafn\Lokaverkefni_Klasasafn\obj\Debug\Lokaverkefni_Klasasafn.csprojResolveAssemblyReference.cache
 C:\Users\Erla\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni_Klasasafn\Lokaverkefni_Klasasafn\obj\Debug\Lokaverkefni_Klasasafn.dll
 C:\Users\Erla\Documents\GitHub\Lokaverkefni_Vor_2017\Lokaverkefni-Forritun\Lokaverkefni_Klasasafn\Lokaverkefni_Klasasafn\obj\Debug\Lokaverkefni_Klasasafn.pdb

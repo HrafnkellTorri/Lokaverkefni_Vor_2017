@@ -21,6 +21,8 @@ namespace Lokaverkefni
         //Klasinn gagnagrunnur opnaður til þess að sækja aðferðir til að tengjast við Töflur í gagnagrunni
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
 
+
+
         public fLokaverkefni()
         {
             InitializeComponent();
@@ -44,6 +46,7 @@ namespace Lokaverkefni
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
+            
             //string breytur búnar til, sett er í þær texta úr textaboxum
             string username = tbUsername.Text;
             string password = tbPassword.Text;
@@ -86,8 +89,11 @@ namespace Lokaverkefni
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
+            
             fSignUp signup = new fSignUp(); 
             signup.Show(); //sýnt signup formið
         }
+        
+
     }
 }

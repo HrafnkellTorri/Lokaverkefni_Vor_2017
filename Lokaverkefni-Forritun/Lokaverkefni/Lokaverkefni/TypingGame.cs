@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Lokaverkefni_Klasasafn;
+
+/* Lokaverkefni
+ * Vor 2017
+ * Erla Óskarsdóttir
+ * Hrafnkell Þorri Þrastarson */
 
 namespace Lokaverkefni
 {
@@ -45,7 +49,7 @@ namespace Lokaverkefni
         Random random = new Random();
 
         //Breytur skilgreindar
-        int timeleft = 30, number = 0, points = 0, comboCounter = 0;
+        int timeleft = 30, number = 0, points = 0, comboCounter = 0, words = 0;
 
         //Fylki með fullt af orðum búið til, orðin eru sett beint í fylkið
         string[] basicWords = new string[wordCount] { "apple", "above", "again", "age", "agree", "after", "air", "alone", "army", "attack", "away", 
@@ -116,6 +120,8 @@ namespace Lokaverkefni
             timer1.Interval = 1000;
             //tíminn látinn telja niður
             timer1.Start();
+            //words counter endurstilltur
+            words = 0;
 
             //Focus() notað til gera notanda kleift á að skrifa strax í textbox
             tbWord.Focus();
@@ -146,6 +152,7 @@ namespace Lokaverkefni
         {
             //Breytur skilgreindar
             int OldHScore = 0, userID = 0;
+            bool highScore = false;
 
             //if setning, kemur upp ef tíminn er búinn
             if (timeleft == 0)
@@ -169,16 +176,27 @@ namespace Lokaverkefni
                     userID = gagnagrunnur.FindUser_ID(username);
                     OldHScore = gagnagrunnur.FindHighscore(username, 2);
 
+                    if (points > OldHScore)
+                    {
+                        highScore = true;
+                    }
+
+                    GameOver gameOver = new GameOver(highScore, points, 30, "TypingGame", words, "");
+                    gameOver.Show();
+
                     if (OldHScore == 0)
                     {
                         gagnagrunnur.InsertHighscore(userID, points, 2);
-                        MessageBox.Show("New Highscore!!");
                     }
                     else if (points > OldHScore && OldHScore != 0)
                     {
-                        MessageBox.Show("New Highscore!!");
                         gagnagrunnur.UpdateHighscore(userID, points, 2);
                     }
+                }
+                else
+                {
+                    GameOver gameOver = new GameOver(highScore, points, 30, "TypingGame", words, "");
+                    gameOver.Show();
                 }
             }
             else
@@ -206,6 +224,7 @@ namespace Lokaverkefni
                     points += 10;
                     lblPoints.Text = points + " points";
                     comboCounter++;
+                    words++;
                 }
                 else
                 {

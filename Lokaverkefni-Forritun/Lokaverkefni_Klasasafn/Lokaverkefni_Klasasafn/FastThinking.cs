@@ -41,5 +41,11 @@ namespace Lokaverkefni_Klasasafn
                 return totalTime;
             } //End á get
         } //End á TotalTime
+
+        //Aðferð sem skilar streng, tengist hinum klösunum sem bæta við strenginn
+        public override string ToString()
+        {
+            return string.Format("\n\nTime: {0} \n\nScore: {1}", TotalTime, Score);
+        }//End á override string
     }
 }

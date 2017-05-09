@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* Lokaverkefni
+ * Vor 2017
+ * Erla Óskarsdóttir
+ * Hrafnkell Þorri Þrastarson */
+
 namespace Lokaverkefni
 {
     public partial class fSignUp : Form

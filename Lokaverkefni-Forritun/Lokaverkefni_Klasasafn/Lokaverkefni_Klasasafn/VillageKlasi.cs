@@ -4,25 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/* Lokaverkefni
- * Vor 2017
- * Erla Óskarsdóttir
- * Hrafnkell Þorri Þrastarson */
-
 namespace Lokaverkefni_Klasasafn
 {
-    public class SpaceBar : FastThinking
+    public class VillageKlasi : FastThinking
     {
         //private inastance varible skilgreind
         private string title;
-        private int clicks;
+        private string age;
 
-        //Smiðurinn tekur inn 
-        public SpaceBar(string t, int c, int score, int totalTime) 
+        //Smiðurinn tekur inn 4 breytur
+        public VillageKlasi(string t, string a, int score, int totalTime) 
             : base (score, totalTime)
         {
             title = t;
-            clicks = c;
+            age = a;
         } //End á smið
 
         //Public Property sem skilar frá sér instance breytu
@@ -35,12 +30,18 @@ namespace Lokaverkefni_Klasasafn
         } //End á Title
 
         //Public Property sem skilar frá sér instance breytu
-        public int Clicks
+        public string Age
         {
             get
             {
-                return clicks;
+                return age;
             } //End á get
-        } //End á Clicks
+        } //End á Age
+
+        //Aðferð sem skilar streng, tengist hinum klösunum sem bæta við strenginn
+        public override string ToString()
+        {
+            return string.Format("Game: {0} \n\n{1}", Title, Age) + base.ToString();
+        }//End á override string
     }
 }

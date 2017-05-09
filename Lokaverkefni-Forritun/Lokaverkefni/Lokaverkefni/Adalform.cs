@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-/* Höfundar : Erla Óskarsdóttir & Hrafnkell Þorri Þrastarson
-   FOR2C3U Vorönn 2017 tækniskólinn */
+/* Lokaverkefni
+ * Vor 2017
+ * Erla Óskarsdóttir
+ * Hrafnkell Þorri Þrastarson */
 
 namespace Lokaverkefni
 {
@@ -64,7 +66,7 @@ namespace Lokaverkefni
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://188.166.169.15/");
+            System.Diagnostics.Process.Start("http://188.166.169.15/leaderboard");
         }
     }
 }

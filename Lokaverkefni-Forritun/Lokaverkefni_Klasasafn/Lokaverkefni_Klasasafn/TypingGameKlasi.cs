@@ -11,18 +11,18 @@ using System.Threading.Tasks;
 
 namespace Lokaverkefni_Klasasafn
 {
-    public class TypingGame : FastThinking
+    public class TypingGameKlasi : FastThinking
     {
         //private inastance varible skilgreind
         private string title;
         private int words;
 
-        //Smiðurinn tekur inn 
-        public TypingGame(string t, int w, int score, int totalTime) 
+        //Smiðurinn tekur inn 4 breytur
+        public TypingGameKlasi(string t, int wordCount, int score, int totalTime) 
             : base (score, totalTime)
         {
             title = t;
-            words = w;
+            words = wordCount;
         } //End á smið
 
         //Public Property sem skilar frá sér instance breytu
@@ -42,5 +42,11 @@ namespace Lokaverkefni_Klasasafn
                 return words;
             } //End á get
         } //End á Words
+
+        //Aðferð sem skilar streng, tengist hinum klösunum sem bæta við strenginn
+        public override string ToString()
+        {
+            return string.Format("Game: {0} \n\nWords: {1}", Title, Words) + base.ToString();
+        }//End á override string
     }
 }

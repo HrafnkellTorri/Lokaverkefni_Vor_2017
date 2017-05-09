@@ -41,8 +41,9 @@
   <ItemGroup>
     <Compile Include="FastThinking.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SpaceBar.cs" />
-    <Compile Include="TypingGame.cs" />
+    <Compile Include="SpaceBarKlasi.cs" />
+    <Compile Include="TypingGameKlasi.cs" />
+    <Compile Include="VillageKlasi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

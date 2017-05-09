@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/* Lokaverkefni
+ * Vor 2017
+ * Erla Óskarsdóttir
+ * Hrafnkell Þorri Þrastarson */
+
 namespace Lokaverkefni
 {
     //Þessi klasi geymir aðferðir fyrir allt forritið
@@ -77,14 +82,14 @@ namespace Lokaverkefni
         //Aðferð sem skilar leiðbeiningum fyrir TypingGame
         public string instructionsTyping ()
         {
-            return "Type as many words as you can and try to be fast! When you get 5 words in a row you get 2x combo wich gives you extra points, "
-            + "keep getting many words right in a row and you could get 5x combo! Get a word wrong and you will lose your combo and 5 points! Stay safe!";
+            return "Type as many words as you can and try to be fast! When you get 5 words in a row you get 2x combo which gives you extra points, "
+            + "if you keep getting many words right in a row you could get the legendary 5x combo eventualy! Get a word wrong and you will lose your combo and 5 points will be reduced from your score! Stay safe!";
         }
 
         //Aðferð sem skilar leiðbeiningum fyrir Village
         public string instructionsVillage()
         {
-            return "Village";
+            return "Buy Steel and Wood to advance in technology! But keep in mind you also have to feed your people and keep them warm by buying coal and meat.\n Please dont go all Mao on us - Your villigers";
         }
 
         //Aðferð sem skilar leiðbeiningum fyrir SpaceBar

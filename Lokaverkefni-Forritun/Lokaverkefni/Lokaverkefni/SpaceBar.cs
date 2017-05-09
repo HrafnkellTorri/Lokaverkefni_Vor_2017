@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-/* Höfundar : Erla Óskarsdóttir & Hrafnkell Þorri Þrastarson
-   FOR2C3U Vorönn 2017 tækniskólinn */
+/* Lokaverkefni
+ * Vor 2017
+ * Erla Óskarsdóttir
+ * Hrafnkell Þorri Þrastarson */
 
 namespace Lokaverkefni
 {
@@ -50,6 +52,8 @@ namespace Lokaverkefni
         private void timer1_Tick(object sender, EventArgs e)
         {
             int userID = 0, OldHScore = 0;
+            bool highScore = false;
+
             if (timeleft == 0)
             {
                 timer1.Stop();
@@ -63,16 +67,27 @@ namespace Lokaverkefni
                     userID = gagnagrunnur.FindUser_ID(username);
                     OldHScore = gagnagrunnur.FindHighscore(username, 1);
 
+                    if (count > OldHScore)
+                    {
+                        highScore = true;
+                    }
+
+                    GameOver gameOver = new GameOver(highScore, count, 10, "SpaceBar", 0, "");
+                    gameOver.Show();
+
                     if (OldHScore == 0)
                     {
                         gagnagrunnur.InsertHighscore(userID, count, 1);
-                        MessageBox.Show("New Highscore!!");
                     }
                     else if (count > OldHScore && OldHScore != 0)
                     {
-                        MessageBox.Show("New Highscore!!");
                         gagnagrunnur.UpdateHighscore(userID, count, 1);
                     }
+                }
+                else
+                {
+                    GameOver gameOver = new GameOver(highScore, count, 10, "SpaceBar", 0, "");
+                    gameOver.Show();
                 }
             }
             else

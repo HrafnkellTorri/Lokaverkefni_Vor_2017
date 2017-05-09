@@ -7,9 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
-/* Höfundar : Erla Óskarsdóttir & Hrafnkell Þorri Þrastarson
-   FOR2C3U Vorönn 2017 Tækniskólinn */
+/* Lokaverkefni
+ * Vor 2017
+ * Erla Óskarsdóttir
+ * Hrafnkell Þorri Þrastarson */
 
 namespace Lokaverkefni
 {
@@ -38,8 +41,12 @@ namespace Lokaverkefni
         }
 
         int wood = 0, steel = 0, meat = 100, coal = 100, coins = 80, level = 1, coinsmulty = 1, depcoal = 4, hunger = 5, canbuysteel = 20, canbuywood = 190, year = 0,coalinventory = 10, meatinventory = 10;
+        int OldHScore = 0, userID = 0, totalTime = 0;
+        bool highScore = false;
 
         Adferdir adferdir = new Adferdir();
+
+        Stopwatch time = new Stopwatch();
 
         private void Village_Load(object sender, EventArgs e)
         {
@@ -97,9 +104,9 @@ namespace Lokaverkefni
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            lblcoins.Text = coins.ToString();
+            
             timer1.Interval = 1000;
-            timer2.Interval = 80;
+            timer2.Interval = 20;
             timer3.Interval = 250;
             timer1.Start();
             timer2.Start();
@@ -113,6 +120,10 @@ namespace Lokaverkefni
             btncoal.Enabled = true;
             btnwood.Enabled = true;
             btnsteel.Enabled = true;
+
+           
+
+            time.Start();
         }
 
         private void btnInstructions_Click(object sender, EventArgs e)
@@ -241,12 +252,13 @@ namespace Lokaverkefni
         private void endgame()
         {
             hideprgsbars();
-            timer1.Stop(); timer2.Stop(); meat = 0; coal = 0;
+            timer1.Stop(); timer2.Stop(); 
             hidebtns();
             showruins();
             btnMenu.Show();
-            btnStart.Show();
-                
+            time.Stop();
+            
+
             if (meat <= 8)
             {
                 MessageBox.Show("You have lost! \nYour people ran out of food and starved to death!");
@@ -255,6 +267,28 @@ namespace Lokaverkefni
             {
                 MessageBox.Show("You have lost! \nYour people ran out of coal and froze to death!");
             }
+
+            totalTime = Convert.ToInt32(time.Elapsed.Seconds);
+
+            //önnur if setning inn í if setningu, kemur upp ef að notandi er ekki Gestur
+            if (username != "Guest")
+            {
+                userID = gagnagrunnur.FindUser_ID(username);
+                OldHScore = gagnagrunnur.FindHighscore(username, 3);
+
+                if (year < OldHScore)
+                {
+                    highScore = true;
+                }
+
+                GameOver gameOver = new GameOver(highScore, year, totalTime, "Village", 0, Age());
+                gameOver.Show();
+            }
+            else
+            {
+                GameOver gameOver = new GameOver(highScore, year, totalTime, "Village", 0, Age());
+                gameOver.Show();
+            }
         }
 
         private void wingame()
@@ -262,7 +296,41 @@ namespace Lokaverkefni
             hideprgsbars();
             timer1.Stop(); timer2.Stop(); meat = 0; coal = 0;
             hidebtns();
-            MessageBox.Show("THE MODERN AGE! You are victorius!");
+            btnMenu.Show();
+            time.Stop();
+            level++;
+           
+
+            totalTime = Convert.ToInt32(time.Elapsed.Minutes);
+
+            //önnur if setning inn í if setningu, kemur upp ef að notandi er ekki Gestur
+            if (username != "Guest")
+            {
+                userID = gagnagrunnur.FindUser_ID(username);
+                OldHScore = gagnagrunnur.FindHighscore(username, 3);
+
+                if (year < OldHScore)
+                {
+                    highScore = true;
+                }
+
+                GameOver gameOver = new GameOver(highScore, year, totalTime, "Village", 0, Age());
+                gameOver.Show();
+
+                if (OldHScore == 0)
+                {
+                    gagnagrunnur.InsertHighscore(userID, year, 3);
+                }
+                else if (year > OldHScore && OldHScore != 0)
+                {
+                    gagnagrunnur.UpdateHighscore(userID, year, 3);
+                }
+            }
+            else
+            {
+                GameOver gameOver = new GameOver(highScore, year, totalTime, "Village", 0, Age());
+                gameOver.Show();
+            }
         }
 
         private void checklevelup()
@@ -309,6 +377,33 @@ namespace Lokaverkefni
             }
         }
 
+        private string Age ()
+        {
+            string age = "";
+
+            if (level == 1)
+            {
+                age = "The Dark Age";
+            }
+            else if (level == 2)
+            {
+                age = "The Feudal Age";
+            }
+            else if (level == 3)
+            {
+                age = "The Castle Age";
+            }
+            else if (level == 4)
+            {
+                age = "The Imperial Age";
+            }
+            else
+            {
+                age = "Modern Age";
+            }
+
+            return age;
+        }
         //Þetta er til þess að loka forritinu alveg þegar ýtt er á takkann X
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
